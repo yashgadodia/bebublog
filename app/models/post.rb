@@ -11,8 +11,8 @@ class Post < ApplicationRecord
   validates :body,  length: { minimum: 25 }
 
   self.per_page = 10
-  # extend FriendlyId
-  # friendly_id :title, use: :slugged
+  extend FriendlyId
+  friendly_id :title, use: :slugged
 
   #what is this exactly
   def optimized_image(image,x,y)
