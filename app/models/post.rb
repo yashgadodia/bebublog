@@ -1,5 +1,9 @@
 class Post < ApplicationRecord
   belongs_to :user
+
+  has_many :comments, as: :commentable, dependent: :destroy
+
+
   #active storage from rails 5
   has_one_attached :thumbnail #macro sets up one-to-one mapping between records and files. each record can have one file attached to it
   has_one_attached :banner

@@ -12,6 +12,7 @@
   <body>
    <%# navbar partial will be added to every page %>
     <%= render 'layouts/navbar'  %>
-    <%= yield %>
+    <%# this guy is the master template, this template will be rendered first => yield %>
+    <%= yield  %>
   </body>
 </html>
