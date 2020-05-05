@@ -22,7 +22,7 @@
             </a>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
             <% if current_user.admin %>
-            <a class="dropdown-item" href="#">New Post</a>
+            <a class="dropdown-item" href="posts/new">New Post</a>
             <% end %>
             <a class="dropdown-item" href="<%= edit_user_registration_path %>">Account Settings</a>
             <div class="dropdown-divider"></div>
