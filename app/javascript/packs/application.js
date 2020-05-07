@@ -16,6 +16,10 @@ require("channels")
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+// bug fix
+global.$ = jQuery;
+
 import 'bootstrap'
 import './src/application.scss'
 require("trix")
