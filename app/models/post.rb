@@ -5,8 +5,8 @@ class Post < ApplicationRecord
 
 
   #active storage from rails 5
-  has_one_attached :thumbnail #macro sets up one-to-one mapping between records and files. each record can have one file attached to it
-  has_one_attached :banner
+  # has_one_attached :thumbnail #macro sets up one-to-one mapping between records and files. each record can have one file attached to it
+  # has_one_attached :banner
   #action text from rails 6
   has_rich_text :body
 
