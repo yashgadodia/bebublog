@@ -19,7 +19,14 @@
       <div class="post_body">
         <%= @post.body %>
       </div>
-      
+    <div class="row">
+    <% if current_user %>
+        <% if current_user.admin %>
+            <%# <%= link_to "destroy post", posts_destroy_path(@post), method: :destroy%> 
+            <%= link_to "Delete post", @post, method: "delete" %>
+        <% end %>
+    <% end %>
+    </div>
     </div>
   </div>
 </div>

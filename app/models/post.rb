@@ -1,7 +1,7 @@
 class Post < ApplicationRecord
   belongs_to :user
 
-  has_many :comments, as: :commentable, dependent: :destroy
+  # has_many :comments, as: :commentable, dependent: :destroy
 
 
   #active storage from rails 5
