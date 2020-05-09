@@ -9,7 +9,7 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # gem 'sqlite3', '~> 1.4'
 
 #heroku uses pg
-gem 'pg'
+gem 'pg', '~> 1.1.4'
 
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
