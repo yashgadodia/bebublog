@@ -24,6 +24,7 @@
         <% if current_user.admin %>
             <%# <%= link_to "destroy post", posts_destroy_path(@post), method: :destroy%> 
             <%= link_to "Delete post", @post, method: "delete" %>
+            <%= link_to "Edit post", edit_post_path()%>
         <% end %>
     <% end %>
     </div>
