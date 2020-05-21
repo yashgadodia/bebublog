@@ -7,7 +7,14 @@
     <%= csp_meta_tag %>
 
     <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= render 'layouts/google_analytics'  %> 
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-167308723-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-167308723-1');
+    </script>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
 
 
