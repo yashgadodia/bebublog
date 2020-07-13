@@ -2,8 +2,11 @@
 <div class="container jumbotron">
 <div class="row">
 <h1>About me</h1>
+<br>
 <hr class="my-4" />
 </div>
+<img src="/assets/my_nice_photo.jpeg" alt="yashpic" width="200" height="200" class="center">
+<br>
 <div class="row">
 <p style="text-align:justify">
 The text below was extracted from my Bumble bio. 
@@ -22,8 +25,8 @@ If you're a prospective employer reading this, it's imperative to explain my lov
 I find it has this unilateral ability to impact the lives of millions of people. I would like nothing more than to be a part of that movement. 
 If you would like to find out more about me, hyperlinks are below at your convenience - 
 </p>
-<hr class="my-4" />
 </div>
+<hr class="my-4" />
 <div class="btn-group" role="group" aria-label="Basic example">
 <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://github.com/yashgadodia';">GitHub</button>
   <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://www.linkedin.com/in/yashgadodia/';">LinkedIn</button>
@@ -32,15 +35,5 @@ If you would like to find out more about me, hyperlinks are below at your conven
   <%# <button type="button" class="btn btn-secondary" onclick="window.location.href = 'https://youtube.com/deanin';">My CV</button> %>
 
 </div>
-
-<% form_tag '/posts/do_test' do %>
-    <%=label_tag 'name' %>
-    <%=text_field_tag 'name'%>
-
-    <%=label_tag 'phone' %>
-    <%=text_field_tag 'phone'%>
-
-    <div><%= submit_tag 'Save' %></div>
-<% end -%>
 
 </div>
