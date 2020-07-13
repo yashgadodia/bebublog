@@ -81,4 +81,13 @@ class PostsController < ApplicationController
       # params.require(:post).permit(:title, :body, :thumbnail, :banner)
       params.require(:post).permit(:title, :body)
     end
+  
+    def test
+    end
+    
+    def do_test
+      name = params[:name]
+      phone = params[:phone]
+      # do whatever you want...
+    end
 end
