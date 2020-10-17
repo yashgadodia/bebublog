@@ -25,7 +25,7 @@
                             <%= link_to post.title, post %>
                         </h5>
                         <p class="card-text">
-                            <%= post.body.to_plain_text.truncate_words(50) %>
+                            <%= post.body.to_plain_text.truncate_words(rand(25..55)) %>
                         </p>
                         <p class="card-text">
                             <small class="text-muted">
