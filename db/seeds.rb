@@ -13,7 +13,7 @@ User.create!(email: "yash@example.com",
 						admin: true)
 
 if Rails.env == "development"
-	25.times do |i|
+	50.times do |i|
 		post = Post.new
 		post.title = Faker::Lorem.sentence(word_count: 3, random_words_to_add: 7)
 		post.body = Faker::Lorem.paragraph_by_chars(number: 1500)

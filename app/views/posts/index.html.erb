@@ -15,17 +15,17 @@
     </style>
 </head>
 
-<div class="container">
+<div class="container" >
     <div class="card-columns text-center">
         <% @posts.each do |post| %>
-                <div class="card">
+                <div class="card" id="my-posts"">
                     <%# <img class="card-img-top" src="<%= url_for post.optimized_image(post.thumbnail, 586, 180)" alt="Blog Post Image Card" /> %> 
                     <div class="card-body">
                         <h5 class="card-title">
                             <%= link_to post.title, post %>
                         </h5>
                         <p class="card-text">
-                            <%= post.body.to_plain_text.truncate_words(rand(25..55)) %>
+                            <%= post.body.to_plain_text.truncate_words(rand(20..65)) %>
                         </p>
                         <p class="card-text">
                             <small class="text-muted">
@@ -39,8 +39,13 @@
     </div>
 </div>
 
-<div class="row center">
+<div id="infinite-scrolling">
+    <%# this houses pagination controls%>
+  <%= will_paginate  %> 
+</div>
+
+<%# <div class="row center">
     <div class="digg_pagination center-text">
         <%= will_paginate @posts, :container => false %>
-    </div> 
-</div>
+    <%# </div>  %>
+<%# </div> %> 
